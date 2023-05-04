@@ -7,8 +7,256 @@ body {
 }
 
 .header {
-    height: 56px;
+    height: 75px;
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
+}
+
+.header__start{
+    display: flex;
+    gap: 10px;
+}
+
+.header__start--menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__start--img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__center{
+    width: 730px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#search-form{
+    width: 550px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-right:none;
+    
+}
+
+.search-form__display-flex{
+    display: flex;
+    padding: 0 20px; /*위아래는 0, 왼 오른쪽은 20px*/
+    width: 100%;
+    height: 24px;
+}
+
+#search{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt; /*한글 워드에서 사용하는 단위: pt*/
+}
+
+.header__search--button{
+    background-color: #f8f8f8;
+    width: 64px;
+    height: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    cursor:pointer;    
+}
+
+.header__search--button:hover{
+    background-color:#f0f0f0;
+}
+
+.keyboard-voice{
+    width: 40px;
+    height:40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.header__end{
+    display: flex;
+    align-items: center;
+}
+
+.header__end--menu{
+    display: flex;
+    width: 142px;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__end--user{
+    display: flex;
+    width: 96px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #065fd4;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__end--user p{
+    width: 48px;
+}
+
+
+/*2일차*/
+
+.content{
+    display: flex;
+}
+
+.content__container{
+    width: 70%;
+    padding: 24px 24px 24px 48px;
+}
+
+.content__video video{
+    width: 100%;
+}
+
+.content__below{
+    margin: 12px 0 24px 0;
+}
+
+.content__below--title{
+    margin: 0;
+}
+
+.below--top{
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.below--top-user-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 42px;
+    gap: 10px;
+}
+
+.user__inform-profile{
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+}
+
+.user__inform-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user__inform-num{
+    margin: 0; /*p태그의 기본 마진값을 지워줌*/
+    color: #606060;
+    font-size: 12px;
+}
+
+.user__inform-inform{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 100%;
+}
+
+.user__inform-name{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.user__sub-btn{
+    background: #000;
+    color: #fff;
+    width: 56px;
+    height: 42px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.user__sub-btn:hover{
+    background-color: #606060;
+}
+
+.below--bottom{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.below--bottom:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.description--container{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.description--main{
+    display: flex;
+    gap: 10px;
+}
+
+.aside{
+    width: 30%;
+    overflow: scroll;
+}
+
+.box{
+    display: flex;
+    gap: 10px;
+}
+
+.box-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.box-info-title{
+    font-weight: bold;
+    font-size: 12x;
+}
+.box-info-user{
+    font-size: 11px;
+}
+.box-info-other{
+    font-size: 11px;
+}
+.box-img img{
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
